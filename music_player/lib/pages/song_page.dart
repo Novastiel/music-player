@@ -29,7 +29,7 @@ class SongPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  
+
                   //app bar
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -63,7 +63,7 @@ class SongPage extends StatelessWidget {
                         ),
 
                         Padding(
-                          padding: const EdgeInsets.all(15.0),
+                          padding: const EdgeInsets.all(8.0),
                           child: Row(
                             children: [
                               Column(
@@ -110,6 +110,7 @@ class SongPage extends StatelessWidget {
                           ],
                         ),
                       ),
+
                       SliderTheme(
                         data: SliderTheme.of(context).copyWith(
                           thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 0),
