@@ -26,6 +26,7 @@ class _HomePageState extends State<HomePage> {
 
   // go to song
   void goToSong(int songIndex) {
+    
   //update
   playlistProvider.currentSongIndex = songIndex;
 

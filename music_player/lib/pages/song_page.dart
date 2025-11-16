@@ -29,6 +29,7 @@ class SongPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  
                   //app bar
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

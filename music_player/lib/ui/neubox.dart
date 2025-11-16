@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:music_player/themes/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class NeuBox extends StatelessWidget {
   final Widget child;
@@ -6,6 +8,9 @@ class NeuBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    bool darkMode = Provider.of<ThemeProvider>(context).isDarkMode;
+
     return Container(
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.background,
@@ -13,14 +18,15 @@ class NeuBox extends StatelessWidget {
         boxShadow: [
           // Subtle shadow
           BoxShadow(
-            color: Colors.grey.shade600,
+            color: darkMode ? Colors.black : Colors.grey.shade600,
             offset: const Offset(4, 4),
-            blurRadius: 15,
+            blurRadius: 12,
           ),
+
           BoxShadow(
-            color: Colors.grey.shade300,
+            color: darkMode ? Colors.grey.shade900 : Colors.white,
             offset: const Offset(-4, -4),
-            blurRadius: 15,
+            blurRadius: 12,
           ),
         ],
       ),
