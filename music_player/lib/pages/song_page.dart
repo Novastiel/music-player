@@ -22,7 +22,7 @@ class SongPage extends StatelessWidget {
 
         // return ui
           return Scaffold(
-          backgroundColor: Theme.of(context).colorScheme.background,
+          backgroundColor: Theme.of(context).colorScheme.surface,
           body: SafeArea(
             child: Padding(
               padding: const EdgeInsets.only(left: 25, right: 25, bottom: 25),
